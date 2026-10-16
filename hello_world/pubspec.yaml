@@ -1,0 +1,66 @@
+name: hello_world
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Backend: database, login and file storage
+  supabase_flutter: ^2.18.0
+
+  # Google login (native account picker on Android / iOS)
+  google_sign_in: ^7.2.0
+
+  # Reads the keys from the .env file
+  flutter_dotenv: ^5.2.1
+
+  # Pick a photo from the camera or the gallery
+  image_picker: ^1.2.0
+
+  # Network listener: wifi / mobile state + a real "is the internet up" check
+  connectivity_plus: ^7.3.2
+  http: ^1.6.0
+
+  # Remembers the cloud splash image between launches
+  shared_preferences: ^2.5.6
+
+  # Reads the app's own version (for the "new update" screen)
+  package_info_plus: ^10.2.2
+
+  # Opens the Play Store / App Store from the update screen
+  url_launcher: ^6.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/images/
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/inter/Inter-Regular.otf
+          weight: 400
+        - asset: assets/fonts/inter/Inter-Medium.otf
+          weight: 500
+        - asset: assets/fonts/inter/Inter-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/inter/Inter-Bold.otf
+          weight: 700
+        - asset: assets/fonts/inter/Inter-ExtraBold.otf
+          weight: 800
